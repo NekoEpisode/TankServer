@@ -1,0 +1,38 @@
+package net.nekoepisode.tankserver;
+
+import net.nekoepisode.tankserver.network.NetworkManager;
+import net.nekoepisode.tankserver.network.event.events.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Main {
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
+    private static Server server = null;
+
+    private static final int port = 8080;
+
+    public static void main(String[] args) throws Exception {
+        NetworkManager.getInstance().registerEvent(0, new EventSendClientDetails());
+        NetworkManager.getInstance().registerEvent(2, new EventConnectionSuccess());
+        NetworkManager.getInstance().registerEvent(3, new EventKick());
+        NetworkManager.getInstance().registerEvent(4, new EventAnnounceConnection());
+        NetworkManager.getInstance().registerEvent(5, new EventChat());
+        NetworkManager.getInstance().registerEvent(6, new EventPlayerChat());
+        NetworkManager.getInstance().registerEvent(8, new EventLoadLevel());
+        NetworkManager.getInstance().registerEvent(9, new EventEnterLevel());
+        NetworkManager.getInstance().registerEvent(13, new EventLevelExit());
+        NetworkManager.getInstance().registerEvent(43, new EventTankPlayerCreate());
+        NetworkManager.getInstance().registerEvent(80, new EventSendTankColors());
+        NetworkManager.getInstance().registerEvent(82, new EventShareLevel());
+
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            if (server != null)
+                server.close();
+        }));
+
+        log.info("Starting server on port {}", port);
+
+        server = new Server(port);
+        server.run();
+    }
+}
