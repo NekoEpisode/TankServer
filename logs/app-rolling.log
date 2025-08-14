@@ -1,0 +1,611 @@
+[ INFO ] [ main | 2025-08-15 00:33:14 ] Starting server on port 8080
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] Using SLF4J as the default logging framework
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.eventLoopThreads: 24
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.noKeySetOptimization: false
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.noUnsafe: false
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] Java version: 21
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] sun.misc.Unsafe.theUnsafe: available
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] sun.misc.Unsafe.copyMemory: available
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] java.nio.Buffer.address: available
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] java.nio.Bits.unaligned: available, true
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5c072e3f
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] sun.misc.Unsafe: available
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] maxDirectMemory: 8543797248 bytes (maybe)
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] Platform: Windows
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] java.nio.ByteBuffer.cleaner(): available
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.noPreferDirect: false
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.processId: 33152 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Djava.net.preferIPv4Stack: false
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Djava.net.preferIPv6Addresses: false
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.leakDetection.level: simple
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.numHeapArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.numDirectArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.pageSize: 8192
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.maxOrder: 11
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.chunkSize: 16777216
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.useCacheForAllThreads: true
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.allocator.type: pooled
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG] [ main | 2025-08-15 00:33:14 ] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] -Dio.netty.recycler.linkCapacity: 16
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] -Dio.netty.recycler.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] -Dio.netty.recycler.delayedQueue.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] -Dio.netty.buffer.checkAccessible: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] -Dio.netty.buffer.checkBounds: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@10abac4e
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Received tank colors: 0, 0, 1080573952, 0, 1081073664, 0, 1077936128, 0, 1080041472
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:18 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:21 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:21 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Sent packet with network id 9, data length: 0
+[ ERROR] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Event not registered: EventTankPlayerCreate
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 00:33:30 ] Neko110923 performed command: /play 1745816632554
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:37:37 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:37:37 ] Sent packet with network id 6, data length: 21
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 00:37:37 ] Neko110923: huh
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:38:03 ] Freed 5 thread-local buffer(s) from thread: nioEventLoopGroup-3-1
+[ INFO ] [ main | 2025-08-15 00:47:06 ] Starting server on port 8080
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] Using SLF4J as the default logging framework
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.eventLoopThreads: 24
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.noKeySetOptimization: false
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.noUnsafe: false
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] Java version: 21
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] sun.misc.Unsafe.theUnsafe: available
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] sun.misc.Unsafe.copyMemory: available
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] java.nio.Buffer.address: available
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] java.nio.Bits.unaligned: available, true
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4c762604
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] sun.misc.Unsafe: available
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] maxDirectMemory: 8543797248 bytes (maybe)
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] Platform: Windows
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] java.nio.ByteBuffer.cleaner(): available
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.noPreferDirect: false
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.processId: 38608 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Djava.net.preferIPv4Stack: false
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Djava.net.preferIPv6Addresses: false
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.leakDetection.level: simple
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.numHeapArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.numDirectArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.pageSize: 8192
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.maxOrder: 11
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.chunkSize: 16777216
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.useCacheForAllThreads: true
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.allocator.type: pooled
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG] [ main | 2025-08-15 00:47:06 ] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] -Dio.netty.recycler.linkCapacity: 16
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] -Dio.netty.recycler.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] -Dio.netty.recycler.delayedQueue.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] -Dio.netty.buffer.checkAccessible: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] -Dio.netty.buffer.checkBounds: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6e68adb6
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Received client details: 59 e760ecf3-e431-4dfb-81a2-5d5dc8b9dd74 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Received tank colors: 0, 0, 1080573952, 0, 1081073664, 0, 1077936128, 0, 1080041472
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:22 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:33 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:33 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Sent packet with network id 9, data length: 0
+[ ERROR] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Event not registered: EventTankPlayerCreate
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 00:47:45 ] Neko110923 performed command: /play 1745816632554
+[ INFO ] [ main | 2025-08-15 00:50:45 ] Starting server on port 8080
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] Using SLF4J as the default logging framework
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.eventLoopThreads: 24
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.noKeySetOptimization: false
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.noUnsafe: false
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] Java version: 21
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] sun.misc.Unsafe.theUnsafe: available
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] sun.misc.Unsafe.copyMemory: available
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] java.nio.Buffer.address: available
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] java.nio.Bits.unaligned: available, true
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @548ad73b
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] sun.misc.Unsafe: available
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] maxDirectMemory: 8543797248 bytes (maybe)
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] Platform: Windows
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] java.nio.ByteBuffer.cleaner(): available
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.noPreferDirect: false
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.processId: 3332 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Djava.net.preferIPv4Stack: false
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Djava.net.preferIPv6Addresses: false
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.leakDetection.level: simple
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.numHeapArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.numDirectArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.pageSize: 8192
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.maxOrder: 11
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.chunkSize: 16777216
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.useCacheForAllThreads: true
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.allocator.type: pooled
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG] [ main | 2025-08-15 00:50:45 ] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] -Dio.netty.recycler.linkCapacity: 16
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] -Dio.netty.recycler.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] -Dio.netty.recycler.delayedQueue.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] -Dio.netty.buffer.checkAccessible: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] -Dio.netty.buffer.checkBounds: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@72f7d3b6
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Received client details: 59 e760ecf3-e431-4dfb-81a2-5d5dc8b9dd74 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Received tank colors: 0, 0, 1080573952, 0, 1081073664, 0, 1077936128, 0, 1080041472
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:49 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:53 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:50:53 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Sent packet with network id 9, data length: 0
+[ ERROR] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Event not registered: EventTankPlayerCreate
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 00:51:01 ] Neko110923 performed command: /play 1745816632554
+[ INFO ] [ main | 2025-08-15 00:55:59 ] Starting server on port 8080
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] Using SLF4J as the default logging framework
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.eventLoopThreads: 24
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.noKeySetOptimization: false
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.noUnsafe: false
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] Java version: 21
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] sun.misc.Unsafe.theUnsafe: available
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] sun.misc.Unsafe.copyMemory: available
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] java.nio.Buffer.address: available
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] java.nio.Bits.unaligned: available, true
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @149494d8
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] sun.misc.Unsafe: available
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] maxDirectMemory: 8543797248 bytes (maybe)
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] Platform: Windows
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] java.nio.ByteBuffer.cleaner(): available
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] -Dio.netty.noPreferDirect: false
+[ DEBUG] [ main | 2025-08-15 00:55:59 ] org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.processId: 40636 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Djava.net.preferIPv4Stack: false
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Djava.net.preferIPv6Addresses: false
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.leakDetection.level: simple
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.numHeapArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.numDirectArenas: 24
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.pageSize: 8192
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.maxOrder: 11
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.chunkSize: 16777216
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.useCacheForAllThreads: true
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.allocator.type: pooled
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG] [ main | 2025-08-15 00:56:00 ] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] -Dio.netty.recycler.linkCapacity: 16
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] -Dio.netty.recycler.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] -Dio.netty.recycler.delayedQueue.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] -Dio.netty.buffer.checkAccessible: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] -Dio.netty.buffer.checkBounds: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@36437eb4
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Received tank colors: 0, 0, 1080573952, 0, 1081073664, 0, 1077936128, 0, 1080041472
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:03 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:06 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:06 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Sent packet with network id 9, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Sent packet with network id 43, data length: 171
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 00:56:16 ] Neko110923 performed command: /play 1745816632554
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 00:57:36 ] Received packet with network id 29
+[ WARN ] [ nioEventLoopGroup-3-1 | 2025-08-15 00:57:36 ] Unknown networkId: 29
+[ INFO ] [ main | 2025-08-15 01:05:07 ] Starting server on port 8080
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] Using SLF4J as the default logging framework
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.eventLoopThreads: 24
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.noKeySetOptimization: false
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.noUnsafe: false
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] Java version: 21
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] sun.misc.Unsafe.theUnsafe: available
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] sun.misc.Unsafe.copyMemory: available
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] java.nio.Buffer.address: available
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] java.nio.Bits.unaligned: available, true
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @710726a3
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] sun.misc.Unsafe: available
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] maxDirectMemory: 8543797248 bytes (maybe)
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] Platform: Windows
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] java.nio.ByteBuffer.cleaner(): available
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.noPreferDirect: false
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.processId: 7048 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Djava.net.preferIPv4Stack: false
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Djava.net.preferIPv6Addresses: false
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.leakDetection.level: simple
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.numHeapArenas: 24
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.numDirectArenas: 24
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.pageSize: 8192
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.maxOrder: 11
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.chunkSize: 16777216
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.useCacheForAllThreads: true
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.allocator.type: pooled
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG] [ main | 2025-08-15 01:05:07 ] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] -Dio.netty.recycler.linkCapacity: 16
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] -Dio.netty.recycler.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] -Dio.netty.recycler.delayedQueue.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] -Dio.netty.buffer.checkAccessible: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] -Dio.netty.buffer.checkBounds: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5ab638f
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Received tank colors: Color(0, 194, 255, 255), Color(32, 129, 160, 255), Color(16, 162, 207, 255)
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:09 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:37 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:37 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Sent packet with network id 9, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Sent packet with network id 43, data length: 171
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 01:05:45 ] Neko110923 performed command: /play 1745816632554
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:06:34 ] Received packet with network id 29
+[ WARN ] [ nioEventLoopGroup-3-1 | 2025-08-15 01:06:34 ] Unknown networkId: 29
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Received tank colors: Color(255, 194, 255, 255), Color(160, 129, 160, 255), Color(207, 162, 207, 255)
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:52 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:57 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:06:57 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:07:05 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:07:05 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:07:05 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:07:05 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:07:05 ] Sent packet with network id 9, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-2 | 2025-08-15 01:07:05 ] Sent packet with network id 6, data length: 51
+[ INFO ] [ nioEventLoopGroup-3-2 | 2025-08-15 01:07:05 ] Neko110923 performed command: /play 1745816632554
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Received tank colors: Color(255, 194, 255, 255), Color(160, 129, 160, 255), Color(207, 162, 207, 255)
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:15 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:20 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:20 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Sent packet with network id 8, data length: 674
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Sent packet with network id 9, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Sent packet with network id 43, data length: 171
+[ DEBUG] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-3 | 2025-08-15 01:07:28 ] Neko110923 performed command: /play 1745817166141
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Received tank colors: Color(0, 194, 255, 255), Color(32, 129, 160, 255), Color(16, 162, 207, 255)
+[ DEBUG] [ nioEventLoopGroup-3-4 | 2025-08-15 01:08:53 ] Set tank color to: Neko110923
+[ INFO ] [ main | 2025-08-15 01:08:59 ] Starting server on port 8080
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] Using SLF4J as the default logging framework
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.eventLoopThreads: 24
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.noKeySetOptimization: false
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.noUnsafe: false
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] Java version: 21
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] sun.misc.Unsafe.theUnsafe: available
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] sun.misc.Unsafe.copyMemory: available
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] java.nio.Buffer.address: available
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] java.nio.Bits.unaligned: available, true
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4c762604
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] sun.misc.Unsafe: available
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] maxDirectMemory: 8543797248 bytes (maybe)
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] Platform: Windows
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] java.nio.ByteBuffer.cleaner(): available
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.noPreferDirect: false
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.processId: 40452 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Djava.net.preferIPv4Stack: false
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Djava.net.preferIPv6Addresses: false
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.leakDetection.level: simple
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.numHeapArenas: 24
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.numDirectArenas: 24
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.pageSize: 8192
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.maxOrder: 11
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.chunkSize: 16777216
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.useCacheForAllThreads: true
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.allocator.type: pooled
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG] [ main | 2025-08-15 01:08:59 ] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] -Dio.netty.recycler.linkCapacity: 16
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] -Dio.netty.recycler.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] -Dio.netty.recycler.delayedQueue.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] -Dio.netty.buffer.checkAccessible: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] -Dio.netty.buffer.checkBounds: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7f25ae7a
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Received tank colors: Color(0, 194, 255, 255), Color(32, 129, 160, 255), Color(16, 162, 207, 255)
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:00 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:02 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:02 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Sent packet with network id 9, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Sent packet with network id 43, data length: 171
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 01:09:08 ] Neko110923 performed command: /play 1745816632554
+[ INFO ] [ main | 2025-08-15 01:14:31 ] Starting server on port 8080
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] Using SLF4J as the default logging framework
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.eventLoopThreads: 24
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.noKeySetOptimization: false
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.selectorAutoRebuildThreshold: 512
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.noUnsafe: false
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] Java version: 21
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] sun.misc.Unsafe.theUnsafe: available
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] sun.misc.Unsafe.copyMemory: available
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] java.nio.Buffer.address: available
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] java.nio.Bits.unaligned: available, true
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @77846d2c
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] sun.misc.Unsafe: available
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] maxDirectMemory: 8543797248 bytes (maybe)
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] Platform: Windows
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.maxDirectMemory: -1 bytes
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] java.nio.ByteBuffer.cleaner(): available
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.noPreferDirect: false
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] org.jctools-core.MpscChunkedArrayQueue: available
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.processId: 40528 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Djava.net.preferIPv4Stack: false
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Djava.net.preferIPv6Addresses: false
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.leakDetection.level: simple
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.leakDetection.targetRecords: 4
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.numHeapArenas: 24
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.numDirectArenas: 24
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.pageSize: 8192
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.maxOrder: 11
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.chunkSize: 16777216
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.smallCacheSize: 256
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.normalCacheSize: 64
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.cacheTrimInterval: 8192
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.useCacheForAllThreads: true
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.allocator.type: pooled
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.threadLocalDirectBufferSize: 0
+[ DEBUG] [ main | 2025-08-15 01:14:31 ] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] -Dio.netty.recycler.linkCapacity: 16
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] -Dio.netty.recycler.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] -Dio.netty.recycler.delayedQueue.ratio: 8
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] -Dio.netty.buffer.checkAccessible: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] -Dio.netty.buffer.checkBounds: true
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5f4593cc
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Received packet with network id 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Received client details: 59 2e39cf8e-5f2c-4e13-afcf-79097148cd24 Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Added player: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Sent packet with network id 2, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Sent packet with network id 6, data length: 48
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Sent packet with network id 4, data length: 56
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Received packet with network id 80
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Received tank colors: Color(0, 194, 255, 255), Color(32, 129, 160, 255), Color(16, 162, 207, 255)
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:32 ] Set tank color to: Neko110923
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:35 ] Received packet with network id 82
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:35 ] Sent packet with network id 6, data length: 99
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Received packet with network id 5
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Sent packet with network id 6, data length: 40
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Sent packet with network id 6, data length: 58
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Sent packet with network id 6, data length: 41
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Sent packet with network id 8, data length: 314
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Sent packet with network id 9, data length: 0
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Sent packet with network id 43, data length: 171
+[ DEBUG] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Sent packet with network id 6, data length: 36
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:42 ] Neko110923 performed command: /play 1745816632554
+[ WARN ] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:45 ] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[ INFO ] [ nioEventLoopGroup-3-1 | 2025-08-15 01:14:45 ] Player Neko110923 disconnected
