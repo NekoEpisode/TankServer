@@ -2,16 +2,16 @@ package net.nekoepisode.tankserver.network.event.events;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
-import net.nekoepisode.tankserver.game.GameInstance;
-import net.nekoepisode.tankserver.game.GameInstanceManager;
-import net.nekoepisode.tankserver.game.level.Level;
-import net.nekoepisode.tankserver.game.level.share.ShareLevelManager;
+import net.nekoepisode.tankserver.command.ICommand;
+import net.nekoepisode.tankserver.command.CommandManager;
 import net.nekoepisode.tankserver.game.player.Player;
 import net.nekoepisode.tankserver.network.PlayerManager;
 import net.nekoepisode.tankserver.network.event.INetworkEvent;
 import net.nekoepisode.tankserver.network.utils.NetworkUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Arrays;
 
 public class EventChat implements INetworkEvent {
     private static final Logger log = LoggerFactory.getLogger(EventChat.class);
@@ -44,49 +44,28 @@ public class EventChat implements INetworkEvent {
                 return;
             }
             player.sendEvent(new EventPlayerChat(player.getName(), ">> " + message));
-            switch (args[0]) {
-                case "/help" -> {
-                    player.sendEvent(new EventPlayerChat("Server", "Available commands: /help"));
-                }
-                case "/test" -> {
-                    switch (args[1]) {
-                        case "load" -> {
-                            player.sendEvent(new EventLoadLevel(
-                                    args[2],
-                                    3,
-                                    false
-                            ));
-                        }
-                        case "enter" -> player.sendEvent(new EventEnterLevel());
-                        case "exit" -> player.sendEvent(new EventLevelExit(args[2]));
-                    }
-                }
-                case "/play" -> {
-                    Level level = ShareLevelManager.getInstance().getLevel(args[1]);
-                    if (level == null) {
-                        player.sendEvent(new EventPlayerChat("Server", "Level not found: " + args[2]));
-                        return;
-                    }
 
-                    GameInstance gameInstance = GameInstanceManager.getInstance().getGameInstance(args[1]);
-                    if (gameInstance == null) {
-                        player.sendServerMessage("GameInstance not found...Creating new one...");
-                        gameInstance = GameInstanceManager.getInstance().addGameInstance(new GameInstance(level));
-                    }
-                    player.sendServerMessage("Adding you to GameInstance!");
-                    gameInstance.addPlayer(player);
-                }
-                default -> {
-                    player.sendEvent(new EventPlayerChat("Server", "Unknown command: " + args[0]));
-                }
+            String commandName = args[0];
+            commandName = commandName.substring(1); // Remove first "/"
+
+            ICommand command = CommandManager.getInstance().getCommand(commandName);
+
+            if (command == null) {
+                player.sendEvent(new EventPlayerChat("Server", "Command not found!"));
+                return;
             }
+
+            // Skip first arg (command name)
+            args = Arrays.copyOfRange(args, 1, args.length);
+
+            command.execute(player, args);
 
             log.info("{} performed command: {}", player.getName(), message);
         } else {
-            for (Player player : PlayerManager.getInstance().getPlayers()) {
-                player.sendEvent(new EventPlayerChat(player.getName(), this.message));
-            }
             Player player = PlayerManager.getInstance().getPlayer(ctx);
+            for (Player player1 : PlayerManager.getInstance().getPlayers()) {
+                player1.sendEvent(new EventPlayerChat((player != null ? player.getName() : "unknown"), this.message));
+            }
             log.info("{}: {}", (player != null ? player.getName() : "unknown"), message);
         }
     }

@@ -18,7 +18,7 @@ public abstract class Item {
         }
 
         public static ItemStack<?> fromString(Object context, String data) {
-            // Simple JSON-like parsing - in real implementation, use a proper JSON parser
+            // TODO: Prase Item
             return new ItemStack<>(new BasicItem("parsed_item"), 1);
         }
 

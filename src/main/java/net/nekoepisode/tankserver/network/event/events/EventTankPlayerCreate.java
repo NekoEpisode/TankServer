@@ -35,9 +35,9 @@ public class EventTankPlayerCreate implements INetworkEvent {
         this.drawAge = drawAge;
         this.targetClientId = player.getUuid();
         this.username = player.getName();
-        this.color1 = player.getTankColor().getColor1();
-        this.color2 = player.getTankColor().getColor2();
-        this.color3 = player.getTankColor().getColor3();
+        this.color1 = player.getTank().getColor().getColor1();
+        this.color2 = player.getTank().getColor().getColor2();
+        this.color3 = player.getTank().getColor().getColor3();
     }
 
     @Override

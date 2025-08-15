@@ -3,45 +3,22 @@ package net.nekoepisode.tankserver.game.tank;
 import net.nekoepisode.tankserver.game.color.TankColor;
 import net.nekoepisode.tankserver.game.team.Team;
 
-public class PlayerTank implements Tank {
-    private final TankColor color;
-    private double x;
-    private double y;
-    private Team team;
+public class PlayerTank extends BaseTank {
+    private double mX, mY;
 
-    public PlayerTank(TankColor color, double x, double y, Team team) {
-        this.color = color;
-        this.x = x;
-        this.y = y;
-        this.team = team;
+    public PlayerTank(TankColor color, double x, double y, double angle, double pitch, Team team) {
+        super(color, x, y, angle, pitch, team);
+        this.mX = x;
+        this.mY = y;
     }
+
+    public double getMX() { return mX; }
+    public double getMY() { return mY; }
+    public void setMX(double mX) { this.mX = mX; }
+    public void setMY(double mY) { this.mY = mY; }
 
     @Override
     public void update() {
-
-    }
-
-    @Override
-    public TankColor getColor() {
-        return color;
-    }
-
-    @Override
-    public double getX() {
-        return x;
-    }
-
-    @Override
-    public double getY() {
-        return y;
-    }
-
-    @Override
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
+        super.update();
     }
 }

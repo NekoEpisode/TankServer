@@ -1,5 +1,6 @@
 package net.nekoepisode.tankserver.game;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -33,6 +34,10 @@ public class GameInstanceManager {
         if (gameInstance != null) {
             removeGameInstance(gameInstance);
         }
+    }
+
+    public List<GameInstance> getGameInstances() {
+        return gameInstanceMap.values().stream().toList();
     }
 
     public int getGameInstanceCount() {

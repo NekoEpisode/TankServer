@@ -44,7 +44,7 @@ public class EventSendTankColors implements INetworkEvent {
         Player player = PlayerManager.getInstance().getPlayer(ctx);
         if (player == null) return;
         log.debug("Received tank colors: {}, {}, {}", color1, color2, color3);
-        player.setTankColor(new TankColor(color1, color2, color3));
+        player.getPlayerSettings().setTankColor(new TankColor(color1, color2, color3));
         log.debug("Set tank color to: {}", player.getName());
     }
 }
