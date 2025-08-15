@@ -28,7 +28,6 @@ public class EventTankUpdate implements INetworkEvent {
         this.vY = t.getVY();
         this.angle = t.getAngle();
         this.pitch = t.getPitch();
-        System.out.println("EventTankUpdate: " + this.tankNetworkId + " " + this.posX + " " + this.posY + " " + this.vX + " " + this.vY + " " + this.angle + " " + this.pitch);
     }
 
     @Override

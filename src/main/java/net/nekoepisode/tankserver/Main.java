@@ -35,9 +35,9 @@ public class Main {
         NetworkManager.getInstance().registerEvent(34, new EventUpdateReadyPlayers());
         NetworkManager.getInstance().registerEvent(37, new EventBeginLevelCountDown());
         NetworkManager.getInstance().registerEvent(38, new EventTankUpdate());
-        NetworkManager.getInstance().registerEvent(39, new EventTankRemove());
         NetworkManager.getInstance().registerEvent(40, new EventTankControllerUpdateC());
         NetworkManager.getInstance().registerEvent(43, new EventTankPlayerCreate());
+        NetworkManager.getInstance().registerEvent(49, new EventTankRemove()); // Oh no i wrote wrong id!!! (fixed)
         NetworkManager.getInstance().registerEvent(80, new EventSendTankColors());
         NetworkManager.getInstance().registerEvent(82, new EventShareLevel());
 
