@@ -36,7 +36,6 @@ public class NetworkEventDecoder extends ByteToMessageDecoder {
 
         // get event with id
         INetworkEvent event = NetworkManager.getInstance().getEvent(networkId);
-
         if (event == null) {
             log.warn("Unknown networkId: {}", networkId);
             Player player = PlayerManager.getInstance().getPlayer(ctx);

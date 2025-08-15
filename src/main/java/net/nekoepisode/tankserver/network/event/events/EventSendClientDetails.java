@@ -3,7 +3,6 @@ package net.nekoepisode.tankserver.network.event.events;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import net.nekoepisode.tankserver.game.player.Player;
-import net.nekoepisode.tankserver.game.player.PlayerState;
 import net.nekoepisode.tankserver.network.PlayerConnection;
 import net.nekoepisode.tankserver.network.PlayerManager;
 import net.nekoepisode.tankserver.network.event.INetworkEvent;
@@ -63,5 +62,7 @@ public class EventSendClientDetails implements INetworkEvent {
             if (!player1.equals(player))
                 player.sendEvent(new EventAnnounceConnection(player1, true));
         }
+
+        log.info("Player {} joined the game.", player.getName());
     }
 }

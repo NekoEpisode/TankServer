@@ -211,8 +211,7 @@ public class GameInstance {
 
     private void update() {
         try {
-            List<Tank> tanksCopy = List.copyOf(tanks);
-            for (Tank tank : tanksCopy) {
+            for (Tank tank : tanks) {
                 if (tank != null) {
                     tank.update();
                 }

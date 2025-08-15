@@ -8,10 +8,12 @@ import net.nekoepisode.tankserver.game.player.Player;
 import net.nekoepisode.tankserver.network.PlayerManager;
 import net.nekoepisode.tankserver.network.event.INetworkEvent;
 import net.nekoepisode.tankserver.network.utils.NetworkUtils;
+import net.nekoepisode.tankserver.utils.MessageUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class EventChat implements INetworkEvent {
     private static final Logger log = LoggerFactory.getLogger(EventChat.class);
@@ -64,9 +66,36 @@ public class EventChat implements INetworkEvent {
         } else {
             Player player = PlayerManager.getInstance().getPlayer(ctx);
             for (Player player1 : PlayerManager.getInstance().getPlayers()) {
-                player1.sendEvent(new EventPlayerChat((player != null ? player.getName() : "unknown"), this.message));
+                if (player != null) {
+                    player1.sendEvent(
+                            new EventPlayerChat(
+                                    "§" +
+                                            (int) player.getPlayerSettings().getTankColor().getColor1().red + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor1().green + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor1().blue + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor2().red + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor2().green + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor2().blue + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor3().red + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor3().green + "," +
+                                            (int) player.getPlayerSettings().getTankColor().getColor3().blue + "|" +
+                                            player.getName(),
+                                    this.message
+                            )
+                    );
+                } else {
+                    player1.sendEvent(new EventPlayerChat("unknown", this.message));
+                }
             }
             log.info("{}: {}", (player != null ? player.getName() : "unknown"), message);
+
+            List<String> mentions = MessageUtils.parseMentions(message);
+            for (String mention : mentions) {
+                Player mentionedPlayer = PlayerManager.getInstance().getPlayer(mention);
+                if (mentionedPlayer != null) {
+                    mentionedPlayer.sendEvent(new EventPlaySound("bonus3.ogg", 1.0f, 1.0f));
+                }
+            }
         }
     }
 }

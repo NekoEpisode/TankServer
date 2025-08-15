@@ -25,8 +25,8 @@ public class EventTankControllerUpdateC implements INetworkEvent {
     private double angle;
     private double mX;
     private double mY;
-    private boolean action1;
-    private boolean action2;
+    private boolean action1; // Fire
+    private boolean action2; // Mine
     private final boolean[] quickActions = new boolean[5];
     private double time;
 
@@ -101,7 +101,7 @@ public class EventTankControllerUpdateC implements INetworkEvent {
                     recipient.sendEvent(new EventTankUpdate(playerTank));
                 }
             } catch (Exception e) {
-                log.error("发送坦克更新失败", e);
+                log.error("Send Tank Update Failed", e);
             }
         }
     }

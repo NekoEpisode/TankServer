@@ -40,6 +40,15 @@ public class PlayerManager {
         return this.playerMap.get(uuid);
     }
 
+    public Player getPlayer(String name) {
+        for (Player player : this.playerMap.values()) {
+            if (player.getName().equals(name)) {
+                return player;
+            }
+        }
+        return null;
+    }
+
     public Player getPlayer(ChannelHandlerContext ctx) {
         return this.ctxMap.get(ctx);
     }

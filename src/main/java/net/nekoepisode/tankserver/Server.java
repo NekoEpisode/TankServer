@@ -11,8 +11,11 @@ import net.nekoepisode.tankserver.network.decoder.NetworkEventDecoder;
 import net.nekoepisode.tankserver.network.encoder.NetworkEventEncoder;
 import net.nekoepisode.tankserver.network.event.events.EventKick;
 import net.nekoepisode.tankserver.network.handlers.ServerHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Server {
+    private static final Logger log = LoggerFactory.getLogger(Server.class);
     private final int port;
     private EventLoopGroup bossGroup;
     private EventLoopGroup workerGroup;
@@ -51,6 +54,8 @@ public class Server {
     }
 
     public void close() {
+        log.info("Stopping server...");
+
         for (Player player : PlayerManager.getInstance().getPlayers()) {
             player.sendEvent(new EventKick("Server is shutting down."));
             player.getPlayerConnection().ctx().close();
